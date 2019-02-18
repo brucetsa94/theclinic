@@ -26,7 +26,7 @@ include "header.php";
  		$report = $_POST['report'];
 
  		
- 		$query = mysqli_query($db, "INSERT INTO report (service_id, patient_id, report, report_date) VALUES ('".$service."', '".$patient."', '".$report."', now())");
+ 		$query = mysqli_query($db, "INSERT INTO report (service_id, patient_id, report) VALUES ('".$service."', '".$patient."', '".$report."'");
 
  		if($query) {
  			echo "<div class='alert alert-success'> Report Made </div>";
